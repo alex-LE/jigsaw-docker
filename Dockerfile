@@ -1,7 +1,7 @@
 FROM composer:1.5
 
 # node-sass gets built from source (??) so we need the build-base package
-RUN composer global require tightenco/jigsaw:v1.0.7 && \
+RUN composer global require tightenco/jigsaw:v1.2.2 && \
 	composer clear-cache && \
 	apk update && \
 	apk --no-cache add nodejs build-base && \
