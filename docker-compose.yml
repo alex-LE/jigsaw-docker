@@ -8,7 +8,7 @@ services:
       - ./:/app
 
   jigsaw_dev:
-    command: ["node_modules/.bin/gulp", "watch"]
+    command: ["npm", "run", "watch"]
     depends_on:
       - jigsaw_build
     environment:
